@@ -12,7 +12,7 @@ currently being supported with security updates.
 
 ## Reporting a Vulnerability
 
-Please make a ticket on Discord. Due to the potential security risks, we suggest not making a github issue. Depending upon other tickets, it will take up to 5 days to respond. Please provide as many details as possible. **If other third parties are affected, please alert that third party.(Besides for NeoCities)** 
+Please make a ticket on Discord. Due to the potential security risks, we suggest not making a github issue and instead reporting it to us via Github's private reporting and Discord. Depending upon other tickets, it will take up to 5 days to respond. Please provide as many details as possible. **If other third parties are affected, please alert that third party.(Besides for NeoCities)** 
 ### WHat will happen
 We guarantee that the following will happen upon receiving your report.
 1) **Escalation** to a trusted member(if appropriate) and/or more questions if very little information is added. 
