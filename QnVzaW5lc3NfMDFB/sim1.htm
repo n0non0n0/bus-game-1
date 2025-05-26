@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business simulator</title>
+<script src="/QnVzaW5lc3NfMDFB/sim1.js"></script>
+<link href='/QnVzaW5lc3NfMDFB/sim1.css' rel='stylesheet' type=text/css media="all">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <noscript><b>Please allow JavaScript to continue</b></noscript>
+<header>  <progress max=100 value='.1' id='gam_com_bar_1' role="progressbar" aria-label="Game progress Bar"></progress>   </header> <div style="visibility:visible" id='gam_set_bus_group'> 
+     <h3 class="gam_usr_setup" aria-label="Header-Create your Own Business">Create your Business:</h3>
+<label class="gam_usr_setup" for='gam_set_bus_name'>Business Name:</label><input class="gam_usr_setup" id='gam_set_bus_name' type='text' placeholder='example business name' aria-label="Business name"><br>
+<h4 class="gam_usr_setup" >Game difficulty</h4>
+<input class="gam_usr_setup" id='gam_set_bus_d1' type='radio' value='3' name='dif'><label class="gam_usr_setup"  for='gam_set_bus_d1' aria-label="easy">Easy</label>
+<input class="gam_usr_setup" id='gam_set_bus_d2' type='radio' value='2' name='dif'><label class="gam_usr_setup"  for='gam_set_bus_d2' aria-label="Moderate">Moderate</label>
+<input class="gam_usr_setup" id='gam_set_bus_d3' type='radio' value='1' name='dif'><label class="gam_usr_setup"  for='gam_set_bus_d1' aria-label="Hard">Difficult</label>
+<br>
+  <label class="gam_usr_setup" for='gam_set_bus_Opay'>Owner pay:</label><input class="gam_usr_setup" id='gam_set_bus_Opay' type='number' min=17  placeholder='$50'><br><button class="gam_usr_setup" id='gam_set_bus_sub'  onclick='a()' aria-label="Start Game">Start Game</button><label class="gam_usr_setup"  for='gam_set_bus_sub'>Submit</label>
+   </div>
+   <script defer>
+    function v() {document.getElementById('gam_com_bar_1').value=A.updateProgression();}
+    function a(){try{
+        if(isNaN(parseInt(document.getElementById('gam_set_bus_Opay').value))||parseInt(document.getElementById('gam_set_bus_Opay').value)<17){return alert('You must chose a pay of atleast $17.00!')}
+        const radioButtons = document.getElementsByName('dif');
+         let dV = null;
+    for (let i = 0; i < radioButtons.length; i++) {
+        if (radioButtons[i].checked) {dV = radioButtons[i].value;break;}}
+  let bN= document.getElementById('gam_com_bar_1').value;
+    if(dV===null||bN===''||bN===null){alert('You must select a dfficulty!');}else{
+     //200000=difference between each level. 100000 is the offset.
+      A.createBusiness(bN, (200000*dV-100000), new EmployeeManager(0,0,0,0,0,0,0,0,0,[new owner(1)],0,0,[17,17,17,17,17,17,17,17,17,parseInt(document.getElementById('gam_set_bus_Opay').value),parseInt(17),17],dV), 1, "", "", 123,dV)
+    }}catch(e){
+    return  console.error(e);
+    }
+      for (let element of document.getElementsByClassName("gam_usr_setup")){
+   element.style.display="none";
+}document.getElementById('gam_set_bus_group').style.display = 'none';
+
+  for (let element of document.getElementsByClassName("gam_play")){
+   element.style.visibility="visible";
+}
+    }//.remove//}
+    
+   </script>
+   <!--********************************************************************************************************************************************************-->
+   <h3 class='gam_play' id='title' style='visibility:hidden'>Hello</h3>
+  </body>
+</html>
