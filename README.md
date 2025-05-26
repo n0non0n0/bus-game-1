@@ -1,8 +1,8 @@
 # Business game 
   - Feel free to test and make issues to fix. This game is a vending machine game to get $10,000. Listed here are technical details. 
-  **Discord:** https://discord.gg/f24xzhUD
-  **Game:** https://lbozo1000.neocities.org/QnVzaW5lc3NfMDFB/sim1
-  **The same exact Game link, just in case something happens:** https://lbozo1000.neocities.org/QnVzaW5lc3NfMDFB/sim1.htm
+ -  **Discord:** https://discord.gg/f24xzhUD
+  - **Game:** https://lbozo1000.neocities.org/QnVzaW5lc3NfMDFB/sim1
+  - **The same exact Game link, just in case something happens:** https://lbozo1000.neocities.org/QnVzaW5lc3NfMDFB/sim1.htm
 ------------------------------------------------
 ## Technical Details
   ### Business
